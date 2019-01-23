@@ -8,7 +8,7 @@ class App < Sinatra::Base
   end
 
   get '/metrics' do
-    `sh smartmon.sh`
+    `bash smartmon.sh`
   end
 
   run! if app_file == $PROGRAM_NAME
